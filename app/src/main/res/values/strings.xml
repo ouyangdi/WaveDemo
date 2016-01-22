@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WaveDemo</string>
+    <string name="btn_text">开始动画</string>
+</resources>
