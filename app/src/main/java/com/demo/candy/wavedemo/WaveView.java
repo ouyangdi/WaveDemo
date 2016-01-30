@@ -82,9 +82,12 @@ public class WaveView extends View {
     public void setWaveShiftRatio(float waveShiftRatio) {
         if(mWaveShiftRatio != waveShiftRatio) {
             mWaveShiftRatio = waveShiftRatio;
-            invalidate();
+
         }
+        invalidate();
     }
+
+
 
     public void setShowWave(boolean showWave) {
         mShowWave = showWave;
@@ -101,6 +104,7 @@ public class WaveView extends View {
             }
 
             mShaderMatrix.postTranslate(mWaveShiftRatio * getWidth(), 0);
+            mWaveShader.setLocalMatrix(mShaderMatrix);
 
             float borderWidth = mBorderPaint == null ? 0f :mBorderPaint.getStrokeWidth();
             switch (mShapeType) {

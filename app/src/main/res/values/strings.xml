@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">WaveDemo</string>
     <string name="btn_text">开始动画</string>
+    <string name="btn_stop">停止动画</string>
 </resources>
